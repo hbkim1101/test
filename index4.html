@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body id="body">
+		<input type="button" value="button" onclick='F();a=10'><br>
+		<p id="text"></p>
+		
+		<script>
+			function F(){
+				for (var i=0;i<10;i++){
+					var obj=document.getElementById("body");
+					var p= document.createElement("p");
+						p.innerHTML = i+"번째입니다.";
+						p.setAttribute("id","p"+i);
+					obj.appendChild(p);
+				}
+			}
+		</script>
+	</body>
+</html>
